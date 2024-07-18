@@ -6,4 +6,4 @@ permissions:
   contents: read
 jobs:
   build:
-    uses: humanelement/composer-repo/.github/workflows/build-human-element-package.yml@refs/heads/main
+    uses: humanelement/composer-repo/.github/workflows/composer-satis-package-build.yml@refs/heads/main
