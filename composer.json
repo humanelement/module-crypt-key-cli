@@ -5,7 +5,8 @@
     "config": {
         "sort-packages": true
     },
-    "version": "dev-1.0.0",
+    "version": "1.0.0",
+    "license": "MIT",
     "require": {
         "magento/module-encryption-key": "100.4.*"
     },
