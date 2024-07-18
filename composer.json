@@ -1,0 +1,25 @@
+{
+    "name": "humanelement/module-encryption-key",
+    "description": "Adds CLI commands for managing the Magento encryption key",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "version": "dev-1.0.0",
+    "require": {
+        "magento/module-encryption-key": "100.4.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "HumanElement\\CryptKey\\": ""
+        }
+    }
+}
+
