@@ -3,9 +3,9 @@
     <type name="Magento\Framework\Console\CommandListInterface">
         <arguments>
             <argument name="commands" xsi:type="array">
-                <item name="generateCryptKey" xsi:type="object">HumanElement\CryptKey\Console\Command\Generate</item>
-                <item name="reEncrypt" xsi:type="object">HumanElement\CryptKey\Console\Command\ReEncrypt</item>
-                <item name="changeCryptKey" xsi:type="object">HumanElement\CryptKey\Console\Command\Change</item>
+                <item name="generateCryptKey" xsi:type="object">HumanElement\CryptKeyCLI\Console\Command\Generate</item>
+                <item name="reEncrypt" xsi:type="object">HumanElement\CryptKeyCLI\Console\Command\ReEncrypt</item>
+                <item name="changeCryptKey" xsi:type="object">HumanElement\CryptKeyCLI\Console\Command\Change</item>
             </argument>
         </arguments>
     </type>

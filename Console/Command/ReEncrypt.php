@@ -1,8 +1,8 @@
 <?php
 
-namespace HumanElement\CryptKey\Console\Command;
+namespace HumanElement\CryptKeyCLI\Console\Command;
 
-use HumanElement\CryptKey\Model\ResourceModel\Key\Change;
+use HumanElement\CryptKeyCLI\Model\ResourceModel\Key\Change;
 use Magento\Framework\Console\QuestionPerformer\YesNo;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

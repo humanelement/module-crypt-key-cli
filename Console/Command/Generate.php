@@ -1,6 +1,6 @@
 <?php
 
-namespace HumanElement\CryptKey\Console\Command;
+namespace HumanElement\CryptKeyCLI\Console\Command;
 
 use Magento\Framework\Config\ConfigOptionsListConstants;
 use Magento\Framework\Math\Random;

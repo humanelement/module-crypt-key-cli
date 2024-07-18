@@ -1,6 +1,6 @@
 <?php
 
-namespace HumanElement\CryptKey\Console\Command;
+namespace HumanElement\CryptKeyCLI\Console\Command;
 
 use Magento\Framework\Console\QuestionPerformer\YesNo;
 use Symfony\Component\Console\Command\Command;
@@ -11,11 +11,11 @@ use Symfony\Component\Console\Output\OutputInterface;
 class Change extends Command {
     const NAME = 'humanelement:cryptkey:change';
 
-    private \HumanElement\CryptKey\Model\ResourceModel\Key\Change $change;
+    private \HumanElement\CryptKeyCLI\Model\ResourceModel\Key\Change $change;
 
     private YesNo $questionPerformer;
 
-    public function __construct(\HumanElement\CryptKey\Model\ResourceModel\Key\Change $change, YesNo $questionPerformer) {
+    public function __construct(\HumanElement\CryptKeyCLI\Model\ResourceModel\Key\Change $change, YesNo $questionPerformer) {
         parent::__construct();
         $this->change = $change;
         $this->questionPerformer = $questionPerformer;

@@ -1,6 +1,6 @@
 <?php
 
-namespace HumanElement\CryptKey\Model\ResourceModel\Key;
+namespace HumanElement\CryptKeyCLI\Model\ResourceModel\Key;
 
 /**
  * Encryption key changer resource model. Subclassed from core to expose a reencrypt-only moethod without changing the key.
