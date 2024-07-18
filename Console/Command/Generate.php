@@ -3,6 +3,7 @@
 namespace HumanElement\CryptKey\Console\Command;
 
 use Magento\Framework\Config\ConfigOptionsListConstants;
+use Magento\Framework\Math\Random;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -13,12 +14,12 @@ class Generate extends Command {
     /**
      * Random
      *
-     * @var \Magento\Framework\Math\Random
+     * @var Random
      */
     protected $random;
 
     public function __construct(
-        \Magento\Framework\Math\Random $random,
+        Random $random,
     ) {
         $this->random = $random;
         parent::__construct();

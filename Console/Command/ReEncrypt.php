@@ -4,8 +4,12 @@ namespace HumanElement\CryptKey\Console\Command;
 
 use HumanElement\CryptKey\Model\ResourceModel\Key\Change;
 use Magento\Framework\Console\QuestionPerformer\YesNo;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Output\OutputInterface;
 
-class ReEncrypt extends \Symfony\Component\Console\Command\Command {
+class ReEncrypt extends Command {
 
     const NAME = 'humanelement:cryptkey:reencrypt';
 
@@ -22,10 +26,10 @@ class ReEncrypt extends \Symfony\Component\Console\Command\Command {
     protected function configure() {
         $this->setName(self::NAME)
             ->setDescription('Re-encrypts credit card numbers and encrypted configuration values.')
-            ->addOption('force', 'f', \Symfony\Component\Console\Input\InputOption::VALUE_NONE, 'Skip confirmation prompt.');
+            ->addOption('force', 'f', InputOption::VALUE_NONE, 'Skip confirmation prompt.');
     }
 
-    protected function execute(\Symfony\Component\Console\Input\InputInterface $input, \Symfony\Component\Console\Output\OutputInterface $output) {
+    protected function execute(InputInterface $input, OutputInterface $output) {
         $force = $input->getOption('force');
         if (!$force) {
             if (!$input->isInteractive()) {

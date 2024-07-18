@@ -4,6 +4,9 @@ namespace HumanElement\CryptKey\Console\Command;
 
 use Magento\Framework\Console\QuestionPerformer\YesNo;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Output\OutputInterface;
 
 class Change extends Command {
     const NAME = 'humanelement:cryptkey:change';
@@ -21,11 +24,11 @@ class Change extends Command {
     protected function configure() {
         $this->setName(self::NAME)
             ->setDescription('Adds a new encryption key to env.php and uses it to re-encrypt credit card numbers and encrypted configuration values.')
-            ->addOption('force', 'f', \Symfony\Component\Console\Input\InputOption::VALUE_NONE, 'Skip confirmation prompt.');
+            ->addOption('force', 'f', InputOption::VALUE_NONE, 'Skip confirmation prompt.');
         parent::configure();
     }
 
-    protected function execute(\Symfony\Component\Console\Input\InputInterface $input, \Symfony\Component\Console\Output\OutputInterface $output) {
+    protected function execute(InputInterface $input, OutputInterface $output) {
         $force = $input->getOption('force');
         if (!$force) {
             if (!$input->isInteractive()) {

@@ -2,6 +2,9 @@
 
 namespace HumanElement\CryptKey\Model\ResourceModel\Key;
 
+/**
+ * Encryption key changer resource model. Subclassed from core to expose a reencrypt-only moethod without changing the key.
+ */
 class Change extends \Magento\EncryptionKey\Model\ResourceModel\Key\Change {
     public function __construct(
         \Magento\Framework\Model\ResourceModel\Db\Context $context,

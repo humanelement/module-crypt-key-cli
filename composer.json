@@ -1,5 +1,5 @@
 {
-    "name": "humanelement/module-encryption-key",
+    "name": "humanelement/module-crypt-key-cli",
     "description": "Adds CLI commands for managing the Magento encryption key",
     "type": "magento2-module",
     "license": [
