@@ -1,0 +1,9 @@
+name: Build Composer Satis
+on:
+  push
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  build:
+    uses: humanelement/composer-repo/.github/workflows/build-human-element-package.yml@he-satis-v2
